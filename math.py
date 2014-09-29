@@ -17,7 +17,20 @@ def programs():
 	    \n volume of sphere       ('volume of sphere', 'sphere volume', 'vs', 'vos', 'sv')\
 	    \n discriminant		('discriminant', 'd')\
 	    \n quadratic formula	('quadratic formula', 'qf')\
-	    \n")
+	    \n degrees to radians   ('degrees to radians', 'd2r')\
+        \n radians to degrees   ('radians to degrees', 'r2d')\
+        \n")
+
+def degree2radian():                    #degree to radian conversion
+    d = float(input("Enter degrees: "))
+    r = d*(pi/180)
+    rpi = d/180
+    print(r , " or ",rpi,"PI radians")
+
+def radian2degree():                    #radian to degree
+    r = float(input("Enter radians: "))
+    d = r*(180/pi)
+    print(d , "degrees")
 
 def areaCircle():						#Area of Circle
     r = float(input("Enter radius: "))
@@ -110,6 +123,8 @@ def quadraticFormula():						#Quadratic Formula
     print ('Solution 1: (%r,0)' % qf1)
     print ('Solution 2: (%r,0)' % qf2)
 
+degree2radianls =      ['degrees to radians', 'd2r']
+radian2degreels =      ['radians to degrees', 'r2d']
 areaCirclels =         ['area of circle', 'circle area', 'aoc', 'ac', 'ca']
 areaTrapezoidls =      ['area of trapezoid', 'trapezoid area', 'aot', 'at', 'ta']
 areaParallelogramls =  ['area of parallelogram', 'paralellogram area', 'aop', 'ap', 'pa']
@@ -132,6 +147,8 @@ while runAgain in ('y', 'Y'):
     select = input('Select a program: ')
 
     if    select in areaCirclels:         areaCircle()
+    elif  select in degree2radianls:      degree2radian()
+    elif  select in radian2degreels:      radian2degree()
     elif  select in areaTrapezoidls:      areaTrapezoid()
     elif  select in areaParallelogramls:  areaParallelogram()
     elif  select in areaTrianglels:       areaTriangle()
