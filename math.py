@@ -25,7 +25,7 @@ def degree2radian():                    #degree to radian conversion
     d = float(input("Enter degrees: "))
     r = d*(pi/180)
     rpi = d/180
-    print(r , " or ",rpi,"PI radians")
+    print(r , " or ",rpi,"π radians")
 
 def radian2degree():                    #radian to degree
     r = float(input("Enter radians: "))
