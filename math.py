@@ -1,5 +1,3 @@
-#!usr/bin/env python
-
 from cmath import pi, sqrt
 from time import sleep
 
