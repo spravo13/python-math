@@ -4,201 +4,201 @@ from cmath import pi, sqrt
 from time import sleep
 
 def programs():
-	"""List of programs and their aliases"""
+    """List of programs and their aliases"""
 
-	print ("\n area of circle			('area of circle','circle area', 'aoc', 'ac', 'ca')\
-		\n area of trapezoid		('area of trapezoid', 'trapezoid area', 'aot', 'at', 'ta')\
-		\n area of parallelogram		('area of parallelogram', 'paralellogram area', 'aop', 'ap', 'pa')\
-		\n area of triangle		('area of triangle', 'triangle area', 'atr', 'aotr', 'tar')\
-		\n SA of cylinder			('sa of cylinder', 'cylinder sa', 'sac', 'saoc', 'csa')\
-		\n volume of cylinder		('volume of cylinder', 'cylinder volume', 'vc', 'voc', 'cv')\
-		\n SA of sphere			('sa of sphere', 'sphere sa', 'sas', 'saos', 'ssa')\
-		\n circumference			('circumference', 'c')\
-		\n length of arc			('length of arc', 'arc length', 'la', 'loa', 'al')\
-		\n area of sector			('area of sector', 'sector area', 'as', 'aos', 'sa')\
-		\n volume of sphere		('volume of sphere', 'sphere volume', 'vs', 'vos', 'sv')\
-		\n discriminant			('discriminant', 'd')\
-		\n quadratic formula		('quadratic formula', 'qf')\
-		\n degrees to radians		('degrees to radians', 'd2r')\
-		\n radians to degrees		('radians to degrees', 'r2d')\
-		\n")
+    print ("\n area of circle			('area of circle','circle area', 'aoc', 'ac', 'ca')\
+	\n area of trapezoid		('area of trapezoid', 'trapezoid area', 'aot', 'at', 'ta')\
+	\n area of parallelogram		('area of parallelogram', 'paralellogram area', 'aop', 'ap', 'pa')\
+	\n area of triangle		('area of triangle', 'triangle area', 'atr', 'aotr', 'tar')\
+	\n SA of cylinder			('sa of cylinder', 'cylinder sa', 'sac', 'saoc', 'csa')\
+	\n volume of cylinder		('volume of cylinder', 'cylinder volume', 'vc', 'voc', 'cv')\
+	\n SA of sphere			('sa of sphere', 'sphere sa', 'sas', 'saos', 'ssa')\
+	\n circumference			('circumference', 'c')\
+	\n length of arc			('length of arc', 'arc length', 'la', 'loa', 'al')\
+	\n area of sector			('area of sector', 'sector area', 'as', 'aos', 'sa')\
+	\n volume of sphere		('volume of sphere', 'sphere volume', 'vs', 'vos', 'sv')\
+	\n discriminant			('discriminant', 'd')\
+	\n quadratic formula		('quadratic formula', 'qf')\
+	\n degrees to radians		('degrees to radians', 'd2r')\
+	\n radians to degrees		('radians to degrees', 'r2d')\
+	\n")
 
 def degree2radian():
-	"""degree to radian"""
+    """degree to radian"""
 
-	d = float(input("Enter degrees: "))
-	r = d*(pi/180)
-	rpi = d/180
-	print(r , " or ",rpi,"π radians")
+    degree = float(input("Enter degrees: "))
+    radian = degree*(pi/180)
+    radian_pi = degree/180
+    print(radian , " or ", radian_pi,"π radians")
 
 def radian2degree():
 
-	"""radian to degree"""
-	r = float(input("Enter radians: "))
-	d = r*(180/pi)
-	print(d , "degrees")
+    """radian to degree"""
+    radian = float(input("Enter radians: "))
+    degree = radian*(180/pi)
+    print(degree , "degrees")
 
-def areaCircle():
-	"""area of circle"""
+def areacircle():
+    """area of circle"""
 
-	r = float(input("Enter radius: "))
-	a = r*r*pi
-	print("Area is: " , a)
+    radian = float(input("Enter radius: "))
+    area = radian*radian*pi
+    print("Area is: " , area)
 
-def areaTrapezoid():
-	"""area of trapezoid"""
+def areatrapezoid():
+    """area of trapezoid"""
 
-	h = float(input("Height of trapezoid: "))
-	b1 = float(input('Base one value: '))
-	b2 = float(input('Base two value: '))
-	a = ((b1 + b2) / 2) * h
-	print("Area is:" , a)
+    height = float(input("Height of trapezoid: "))
+    base_1 = float(input('Base one value: '))
+    base_2 = float(input('Base two value: '))
+    area = ((base_1 + base_2) / 2) * height
+    print("Area is:" , area)
 	
-def areaParallelogram():
-	"""area of parallelogram"""
+def areaparallelogram():
+    """area of parallelogram"""
 
-	b = float(input('Length of base: '))
-	h = float(input('Measurement of height: '))
-	a = b * h
-	print("Area is: " , a)
+    base = float(input('Length of base: '))
+    height = float(input('Measurement of height: '))
+    area = base * height
+    print("Area is: " , area)
 	
-def areaTriangle():
-	"""area of triangle"""
+def areatriangle():
+    """area of triangle"""
 
-	b = float(input('Base of triangle: '))
-	h = float(input('Height of triangle: '))
-	a = 0.5 * b * h
-	print("Area is: " , a)
+    base = float(input('Base of triangle: '))
+    height = float(input('Height of triangle: '))
+    area = 0.5 * base * height
+    print("Area is: " , area)
 
 def sacylinder():
-	"""surface area of cylinder"""
+    """surface area of cylinder"""
 
-	r = float(input('Raduis of cylinders faces: '))
-	h = float(input('Height of circle: '))
-	sa = ((2*pi*r) * h) + ((pi*r**2)*2)
-	print("Surface Area is: " , sa)
+    radian = float(input('Raduis of cylinders faces: '))
+    height = float(input('Height of circle: '))
+    surface_area = ((2*pi*radian) * height) + ((pi*radian**2)*2)
+    print("Surface Area is: " , surface_area)
 
-def volumeCylinder():
-	"""volume of cylinder"""
+def volumecylinder():
+    """volume of cylinder"""
 
-	h = float(input('Height of cylinder: '))
-	r = float(input('Raduis of cylinder: '))
-	v = pi * r * r * h
-	print ("Volume is: ", v)
+    height = float(input('Height of cylinder: '))
+    radian = float(input('Raduis of cylinder: '))
+    volume = pi * radian * radian * height
+    print ("Volume is: ", volume)
 
-def SAsphere():
-	"""surface area of sphere"""
+def sasphere():
+    """surface area of sphere"""
 
-	r = float(input('Raduis of sphere: '))
-	sa = 4 * pi * r **2
-	print ("Surface Area is: ", sa)
+    radian = float(input('Raduis of sphere: '))
+    surface_area = 4 * pi * radian **2
+    print ("Surface Area is: ", surface_area)
 
-def sphereVolume():
-	"""Sphere Volume"""
+def spherevolume():
+    """Sphere Volume"""
 
-	r = float(input('Raduis of sphere: '))
-	v = (4/3) * (pi * r ** 3)
-	print ("Volume is: ", v)
+    radian = float(input('Raduis of sphere: '))
+    volume = (4/3) * (pi * radian ** 3)
+    print ("Volume is: ", volume)
 
 def circumference():
-	"""circumference"""
+    """circumference"""
 
-	d = float(input('Diameter of circle: '))
-	c = pi * d
-	print ("Circumference is: ", c)
+    diameter = float(input('Diameter of circle: '))
+    circumference = pi * diameter
+    print ("Circumference is: ", circumference)
 
 def arclength():
-	"""arc length"""
+    """arc length"""
 
-	d = float(input('Diameter of circle: '))
-	a = float(input('angle measure: '))
-	if a >= 361:
-		print("Angle is not possible")
-	return
-	l = (pi*d) * (a/360)
-	print ("Arc Length is: ", l)
+    diameter = float(input('Diameter of circle: '))
+    angle = float(input('angle measure: '))
+    if angle >= 361:
+        print("Angle is not possible")
+    return
+    arc_length = (pi*diameter) * (angle/360)
+    print ("Arc Length is: ", arc_length)
 
 def sectorarea():
-	"""area of sector"""
+    """area of sector"""
 
-	r = float(input('Radius of Circle: '))
-	a = float(input('angle measure: '))
-	if a >= 361:
-		print ("Angle is not possible")
-	return
-	sa = (pi*r**2) * (a/360)
-	print ("Sector Area: ", sa)
+    radius = float(input('Radius of Circle: '))
+    angle = float(input('angle measure: '))
+    if angle >= 361:
+        print ("Angle is not possible")
+    return
+    surface_area = (pi*radius**2) * (area/360)
+    print ("Sector Area: ", surface_area)
     
 def discriminant():
-	"""discriminant"""
+    """discriminant"""
 
-	a = float(input('The A value: '))
-	b = float(input('The B value: '))
-	c = float(input('The C value: '))
-	d = (b**2) - (4*a*c)
-	if d > 0: 
-		print ('Two Solutions. Discriminant value is:', d)
-	elif d == 0: 
-		print ('One Solution. Discriminant value is:', d)
-	elif d < 0:
-		print ('No Real Solutions. Discriminant value is:', d)
+    a_value = float(input('The A value: '))
+    b_value = float(input('The B value: '))
+    c_value = float(input('The C value: '))
+    discriminant = (b_value**2) - (4*a_value*c_value)
+    if discriminant > 0: 
+        print ('Two Solutions. Discriminant value is:', discriminant)
+    elif discriminant == 0: 
+        print ('One Solution. Discriminant value is:', discriminant)
+    elif discriminant < 0:
+        print ('No Real Solutions. Discriminant value is:', discriminant)
 
-def quadraticFormula():
-	"""quadratic formula"""
-	a = float(input('The A value: '))
-	b = float(input('The B value: '))
-	c = float(input('The C value: '))
-	d  = (b**2) - (4*a*c)
-	d = sqrt(d)
-	qf1 = (-b + d) / 2 * a
-	qf2 = (-b - d) / 2 * a
-	print ('Solution 1: (%r,0)' % qf1)
-	print ('Solution 2: (%r,0)' % qf2)
+def quadraticformula():
+    """quadratic formula"""
+    a_value = float(input('The A value: '))
+    b_value = float(input('The B value: '))
+    c_value = float(input('The C value: '))
+    d_value  = (b_value**2) - (4*a_value*c_value)
+    d_value = sqrt(d_value)
+    qf1 = (-b_value + d_value) / 2 * a_value
+    qf2 = (-b_value - d_value) / 2 * a_value
+    print ('Solution 1: (%r,0)' % qf1)
+    print ('Solution 2: (%r,0)' % qf2)
 
-degree2radianls =      ['degrees to radians', 'd2r']
-radian2degreels =      ['radians to degrees', 'r2d']
-areaCirclels =         ['area of circle', 'circle area', 'aoc', 'ac', 'ca']
-areaTrapezoidls =      ['area of trapezoid', 'trapezoid area', 'aot', 'at', 'ta']
-areaParallelogramls =  ['area of parallelogram', 'paralellogram area', 'aop', 'ap', 'pa']
-areaTrianglels =       ['area of triangle', 'triangle area', 'atr', 'aotr', 'tar']
-saCylinderls =         ['sa of cylinder', 'cylinder sa', 'sac', 'saoc', 'csa']
-volumeCylinderls =     ['volume of cylinder', 'cylinder volume', 'vc', 'voc', 'cv']
-discriminantls =       ['discriminant', 'd']
-saSpherels =           ['sa of sphere', 'sphere sa', 'sas', 'saos', 'ssa']
-volumeSpherels =       ['volume of sphere', 'sphere volume', 'vs', 'vos', 'sv']
-quadraticFormulals =   ['quadratic formula', 'qf']
-circumferencels =      ['circumference', 'c']
-lengthArcls =          ['length of arc', 'arc length', 'la', 'loa', 'al']
-sectorAreals =         ['area of sector', 'sector area', 'as', 'aos', 'sa']
-plist =                ['p', 'programs', 'program list', 'list', 'ls']
+DEGREE_TO_RADIAN_LS =	['degrees to radians', 'd2r']
+RADIAN_TO_DEGREE_LS =	['radians to degrees', 'r2d']
+AREA_CIRCLE_LS =	['area of circle', 'circle area', 'aoc', 'ac', 'ca']
+AREA_TRAPEZOID_LS =	['area of trapezoid', 'trapezoid area', 'aot', 'at', 'ta']
+AREA_PARALLELOGRAM_LS =	['area of parallelogram', 'paralellogram area', 'aop', 'ap', 'pa']
+AREA_TRIANGLE_LS =	['area of triangle', 'triangle area', 'atr', 'aotr', 'tar']
+SA_CYLINDER_LS =	['sa of cylinder', 'cylinder sa', 'sac', 'saoc', 'csa']
+VOLUME_CYLINDER_LS =	['volume of cylinder', 'cylinder volume', 'vc', 'voc', 'cv']
+DISCRIMINANT_LS =	['discriminant', 'd']
+SA_SPHERE_LS =		['sa of sphere', 'sphere sa', 'sas', 'saos', 'ssa']
+VOLUME_SPHERE_LS =	['volume of sphere', 'sphere volume', 'vs', 'vos', 'sv']
+QUADRATIC_FORMULA_LS =	['quadratic formula', 'qf']
+CIRCUMFERENCE_LS =	['circumference', 'c']
+LENGTH_ARC_LS =		['length of arc', 'arc length', 'la', 'loa', 'al']
+AREA_SECTOR_LS =	['area of sector', 'sector area', 'as', 'aos', 'sa']
+PROGRAM_LS =		['p', 'programs', 'program list', 'list', 'ls']
 
-programsls = False
-runAgain = 'y'
-while runAgain in ('y', 'Y'):
+LIST = False
+RUN_AGAIN = 'y'
+while RUN_AGAIN in ('y', 'Y'):
 
-	select = input('Select a program: ')
+    SELECT = input('Select a program: ')
 
-	if    select in areaCirclels:			areaCircle()
-	elif  select in degree2radianls:		degree2radian()
-	elif  select in radian2degreels:		radian2degree()
-	elif  select in areaTrapezoidls:		areaTrapezoid()
-	elif  select in areaParallelogramls:	areaParallelogram()
-	elif  select in areaTrianglels:			areaTriangle()
-	elif  select in saCylinderls:			sacylinder()
-	elif  select in volumeCylinderls:		volumeCylinder()
-	elif  select in discriminantls:			discriminant()
-	elif  select in saSpherels:				SAsphere()
-	elif  select in volumeSpherels:			sphereVolume()
-	elif  select in quadraticFormulals:		quadraticFormula()
-	elif  select in circumferencels:		circumference()
-	elif  select in lengthArcls:			arclength()
-	elif  select in sectorAreals:			sectorarea()
-	elif  select in plist:					programs(); programsls = True
-	else: print('That is not a program		For Program List Type "p"')
-	programsls = True
+    if    SELECT in AREA_CIRCLE_LS:		areacircle()
+    elif  SELECT in DEGREE_TO_RADIAN_LS:	degree2radian()
+    elif  SELECT in RADIAN_TO_DEGREE_LS:	radian2degree()
+    elif  SELECT in AREA_TRAPEZOID_LS:		areatrapezoid()
+    elif  SELECT in AREA_PARALLELOGRAM_LS:	areaparallelogram()
+    elif  SELECT in AREA_TRIANGLE_LS:		areatriangle()
+    elif  SELECT in SA_CYLINDER_LS:		sacylinder()
+    elif  SELECT in VOLUME_CYLINDER_LS:		volumecylinder()
+    elif  SELECT in DISCRIMINANT_LS:		discriminant()
+    elif  SELECT in SA_SPHERE_LS:		sasphere()
+    elif  SELECT in VOLUME_SPHERE_LS:		spherevolume()
+    elif  SELECT in QUADRATIC_FORMULA_LS:	quadraticformula()
+    elif  SELECT in CIRCUMFERENCE_LS:		circumference()
+    elif  SELECT in LENGTH_ARC_LS:		arclength()
+    elif  SELECT in AREA_SECTOR_LS:		sectorarea()
+    elif  SELECT in PROGRAM_LS:			programs(); LIST = True
+    else: print('That is not a program		For Program List Type "p"')
+    LIST = True
 
-	sleep(.4)
-	if programsls == False:
-		print('Do you want to do another calculation?(y/n)')
-		runAgain = input()
+    sleep(.4)
+    if LIST == False:
+        print('Do you want to do another calculation?(y/n)')
+        RUN_AGAIN = input()
 
