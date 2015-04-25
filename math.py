@@ -1,7 +1,11 @@
+"""A python program which solves mainly geometry problems"""
+
 from cmath import pi, sqrt
 from time import sleep
 
 def programs():
+	"""List of programs and their aliases"""
+
 	print ("\n area of circle			('area of circle','circle area', 'aoc', 'ac', 'ca')\
 		\n area of trapezoid		('area of trapezoid', 'trapezoid area', 'aot', 'at', 'ta')\
 		\n area of parallelogram		('area of parallelogram', 'paralellogram area', 'aop', 'ap', 'pa')\
@@ -19,69 +23,93 @@ def programs():
 		\n radians to degrees		('radians to degrees', 'r2d')\
 		\n")
 
-def degree2radian():						#degree to radian conversion
+def degree2radian():
+	"""degree to radian"""
+
 	d = float(input("Enter degrees: "))
 	r = d*(pi/180)
 	rpi = d/180
 	print(r , " or ",rpi,"π radians")
 
-def radian2degree():						#radian to degree
+def radian2degree():
+
+	"""radian to degree"""
 	r = float(input("Enter radians: "))
 	d = r*(180/pi)
 	print(d , "degrees")
 
-def areaCircle():							#Area of Circle
+def areaCircle():
+	"""area of circle"""
+
 	r = float(input("Enter radius: "))
 	a = r*r*pi
 	print("Area is: " , a)
 
-def areaTrapezoid():						#Area of trapezoid    
+def areaTrapezoid():
+	"""area of trapezoid"""
+
 	h = float(input("Height of trapezoid: "))
 	b1 = float(input('Base one value: '))
 	b2 = float(input('Base two value: '))
 	a = ((b1 + b2) / 2) * h
 	print("Area is:" , a)
 	
-def areaParallelogram():					#Area of Parallelogram	
+def areaParallelogram():
+	"""area of parallelogram"""
+
 	b = float(input('Length of base: '))
 	h = float(input('Measurement of height: '))
 	a = b * h
 	print("Area is: " , a)
 	
-def areaTriangle():							#Area of Triangle
+def areaTriangle():
+	"""area of triangle"""
+
 	b = float(input('Base of triangle: '))
 	h = float(input('Height of triangle: '))
 	a = 0.5 * b * h
 	print("Area is: " , a)
 
-def sacylinder():							#Surface Area of Cylinder
+def sacylinder():
+	"""surface area of cylinder"""
+
 	r = float(input('Raduis of cylinders faces: '))
 	h = float(input('Height of circle: '))
 	sa = ((2*pi*r) * h) + ((pi*r**2)*2)
 	print("Surface Area is: " , sa)
 
-def volumeCylinder():						#Volume of cylinder
+def volumeCylinder():
+	"""volume of cylinder"""
+
 	h = float(input('Height of cylinder: '))
 	r = float(input('Raduis of cylinder: '))
 	v = pi * r * r * h
 	print ("Volume is: ", v)
 
-def SAsphere():								#Surface area of sphere
+def SAsphere():
+	"""surface area of sphere"""
+
 	r = float(input('Raduis of sphere: '))
 	sa = 4 * pi * r **2
 	print ("Surface Area is: ", sa)
 
-def sphereVolume():							#Sphere Volume 
+def sphereVolume():
+	"""Sphere Volume"""
+
 	r = float(input('Raduis of sphere: '))
 	v = (4/3) * (pi * r ** 3)
 	print ("Volume is: ", v)
 
-def circumference():						#Circumference 
+def circumference():
+	"""circumference"""
+
 	d = float(input('Diameter of circle: '))
 	c = pi * d
 	print ("Circumference is: ", c)
 
-def arclength():							#Arc Length
+def arclength():
+	"""arc length"""
+
 	d = float(input('Diameter of circle: '))
 	a = float(input('angle measure: '))
 	if a >= 361:
@@ -90,7 +118,9 @@ def arclength():							#Arc Length
 	l = (pi*d) * (a/360)
 	print ("Arc Length is: ", l)
 
-def sectorarea():							#Area of Sector
+def sectorarea():
+	"""area of sector"""
+
 	r = float(input('Radius of Circle: '))
 	a = float(input('angle measure: '))
 	if a >= 361:
@@ -99,7 +129,9 @@ def sectorarea():							#Area of Sector
 	sa = (pi*r**2) * (a/360)
 	print ("Sector Area: ", sa)
     
-def discriminant():							#Discriminant
+def discriminant():
+	"""discriminant"""
+
 	a = float(input('The A value: '))
 	b = float(input('The B value: '))
 	c = float(input('The C value: '))
@@ -111,7 +143,8 @@ def discriminant():							#Discriminant
 	elif d < 0:
 		print ('No Real Solutions. Discriminant value is:', d)
 
-def quadraticFormula():						#Quadratic Formula
+def quadraticFormula():
+	"""quadratic formula"""
 	a = float(input('The A value: '))
 	b = float(input('The B value: '))
 	c = float(input('The C value: '))
